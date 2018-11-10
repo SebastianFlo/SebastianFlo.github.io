@@ -1,12 +1,21 @@
 import Vue from 'vue'
+import Buefy from 'buefy'
+import { reduxStorePlugin } from 'redux-vue';
+
+// Data Layer
+import store from './data/store';
+
+// Config
 import App from './App.vue'
 import router from './router'
-import Buefy from 'buefy'
 
 Vue.use(Buefy)
+Vue.use(reduxStorePlugin);
+
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  render: h => h(App)
+    store,
+    router,
+    render: h => h(App)
 }).$mount('#app')
