@@ -1,9 +1,10 @@
 <template>
     <section class="section" id="app">
         <div class="level">
-            <div class="level-item">
-                <router-link to="/">Home</router-link>
-                <router-link to="/about">About</router-link>
+            <div class="level-left">
+                <div class="level-item">
+                    <SebNav></SebNav>
+                </div>
             </div>
         </div>
 
@@ -12,6 +13,17 @@
         </div>
     </section>
 </template>
+
+<script>
+    import SebNav from './modules/core/Nav/Nav.component';
+
+    export default {
+        name: 'SebApp',
+        components: {
+            SebNav
+        }
+    }
+</script>
 
 <style lang="scss">
     @import './App';

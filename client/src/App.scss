@@ -21,7 +21,7 @@ $colors: (
     "twitter": ($twitter, $twitter-invert)
 );
 
-$body-background-color: $cyan;
+$body-background-color: $white-ter;
 
 // Links
 $link: $primary;
@@ -29,6 +29,7 @@ $link-invert: $primary-invert;
 $link-focus-border: $primary;
 
 // Card
+$card-background-color: $yellow;
 $card-shadow: 0 4px 10px rgba(10, 10, 10, 0.1), 0px -1px 3px 0px rgba(10, 10, 10, 0.1);
 
 // Import Bulma and Buefy styles

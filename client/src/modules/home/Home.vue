@@ -3,11 +3,15 @@
         <div class="tile has-text-centered is-3">
             <HelloWorld/>
         </div>
+
         <div class="tile has-text-centered is-1"></div>
+
         <div class="tile has-text-centered is-3">
             <HelloWorld/>
         </div>
+
         <div class="tile has-text-centered is-1"></div>
+
         <div class="tile has-text-centered is-3">
             <HelloWorld/>
         </div>
