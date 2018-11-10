@@ -1,8 +1,11 @@
 <template>
-    <div class="home">
-        <img alt="Vue logo"
-            src="../../assets/logo.png">
-        <HelloWorld msg="Sebastian Florian - Web Development" />
+    <div class="home level">
+        <div class="level-item has-text-centered">
+            <HelloWorld/>
+        </div>
+        <div class="level-item has-text-centered">
+            <HelloWorld/>
+        </div>
     </div>
 </template>
 
@@ -16,3 +19,7 @@
         }
     }
 </script>
+
+<style lang="scss">
+    @import './Home';
+</style>
