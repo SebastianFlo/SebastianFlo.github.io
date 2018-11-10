@@ -1,8 +1,15 @@
 .DS_Store
 client/node_modules/
-npm-debug.log
-yarn-error.log
+client/dist
+
 .editorconfig
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
 
 # Editor directories and files
 .idea
