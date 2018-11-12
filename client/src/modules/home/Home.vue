@@ -7,6 +7,7 @@
         <div class="tile has-text-centered is-1"></div>
 
         <div class="tile has-text-centered is-3">
+            <Cube/>
         </div>
 
         <div class="tile has-text-centered is-1"></div>
@@ -17,7 +18,7 @@
 </template>
 
 <script>
-    import Cube from '@/modules/core/Cube/Cube.component';
+    import Cube from '@/modules/shared/Cube/Cube.component';
 
     export default {
         name: 'home',

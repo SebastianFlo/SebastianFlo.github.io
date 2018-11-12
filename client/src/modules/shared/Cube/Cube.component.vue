@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
             <div class="cube">
-                <div class="front">front</div>
+                <div class="right">right</div>
                 <!-- <div class="back">back</div> -->
                 <div class="top">top</div>
                 <!-- <div class="bottom">bottom</div> -->
