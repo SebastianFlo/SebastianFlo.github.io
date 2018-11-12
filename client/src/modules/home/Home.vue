@@ -1,30 +1,28 @@
 <template>
     <div class="home tile is-ancestor">
         <div class="tile has-text-centered is-3">
-            <HelloWorld/>
+            <Cube/>
         </div>
 
         <div class="tile has-text-centered is-1"></div>
 
         <div class="tile has-text-centered is-3">
-            <HelloWorld/>
         </div>
 
         <div class="tile has-text-centered is-1"></div>
 
         <div class="tile has-text-centered is-3">
-            <HelloWorld/>
         </div>
     </div>
 </template>
 
 <script>
-    import HelloWorld from '@/modules/core/HelloWorld/HelloWorld.state.js';
+    import Cube from '@/modules/core/Cube/Cube.component';
 
     export default {
         name: 'home',
         components: {
-            HelloWorld
+            Cube
         }
     }
 </script>
