@@ -43,6 +43,18 @@ $side-color: $yellow;
             transform: rotateX(-90deg) translateY(-100px);
             transform-origin: top center;
             background: lighten( $side-color, 20%);
+            cursor: pointer;
+
+            &:hover {
+                background: lighten( $side-color, 30%);
+            }
+
+            h1 {
+                color: darken( $side-color, 20%);
+                opacity: 0.8;
+                font-size: 100px;
+                transform: rotateZ(-45deg);
+            }
         }
     }
 }
