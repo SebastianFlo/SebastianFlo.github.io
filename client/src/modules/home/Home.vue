@@ -1,5 +1,5 @@
 <template>
-    <div class="home tile is-ancestor">
+    <div class="container home tile is-ancestor">
         <div class="tile has-text-centered is-3">
             <Cube/>
         </div>
@@ -13,6 +13,7 @@
         <div class="tile has-text-centered is-1"></div>
 
         <div class="tile has-text-centered is-3">
+            <Cube/>
         </div>
     </div>
 </template>

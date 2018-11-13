@@ -8,7 +8,7 @@
             </div>
         </div>
 
-        <div class="container level">
+        <div class="container level is-fluid">
             <router-view class="level-item"/>
         </div>
     </section>
