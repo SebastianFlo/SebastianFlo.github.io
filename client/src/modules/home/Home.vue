@@ -1,19 +1,39 @@
 <template>
-    <div class="container home tile is-ancestor">
-        <div class="tile has-text-centered is-3">
-            <Cube/>
+    <div class="home">
+        <div class="columns">
+            <div class="column has-text-centered is-one-third">
+                <Cube />
+            </div>
+
+            <div class="column has-text-centered"></div>
+
+            <div class="column has-text-centered is-one-third">
+                <Cube />
+            </div>
+
+            <div class="column has-text-centered"></div>
+
+            <div class="column has-text-centered">
+                <Cube />
+            </div>
         </div>
 
-        <div class="tile has-text-centered is-1"></div>
+        <div class="columns">
+            <div class="column has-text-centered is-one-third">
+                <Cube />
+            </div>
 
-        <div class="tile has-text-centered is-3">
-            <Cube/>
-        </div>
+            <div class="column has-text-centered"></div>
 
-        <div class="tile has-text-centered is-1"></div>
+            <div class="column has-text-centered is-one-third">
+                <Cube />
+            </div>
 
-        <div class="tile has-text-centered is-3">
-            <Cube/>
+            <div class="column has-text-centered"></div>
+
+            <div class="column has-text-centered is-one-third">
+                <Cube />
+            </div>
         </div>
     </div>
 </template>

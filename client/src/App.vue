@@ -2,14 +2,19 @@
     <section class="section container" id="app">
         <div class="level top-level">
             <div class="level-left">
-                <div class="level-item">
-                    <SebNav></SebNav>
-                </div>
+                <SebNav></SebNav>
             </div>
         </div>
 
-        <div class="container level is-fluid">
-            <router-view class="level-item"/>
+        <div class="container is-fluid">
+            <router-view/>
+        </div>
+
+        <div class="level top-level">
+            <div class="level-left"></div>
+            <div class="level-right">
+                Contact
+            </div>
         </div>
     </section>
 </template>
