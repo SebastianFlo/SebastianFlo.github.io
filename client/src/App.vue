@@ -1,16 +1,17 @@
 <template>
-    <section class="section container" id="app">
-        <div class="level top-level">
+    <section class="container" id="app">
+        <div class="section level top-level">
             <div class="level-left">
+                <div class="header-brand">sebastian.party</div>
                 <SebNav></SebNav>
             </div>
         </div>
 
-        <div class="container is-fluid">
+        <div class="section container is-fluid">
             <router-view/>
         </div>
 
-        <div class="level top-level">
+        <div class="section level top-level">
             <div class="level-left"></div>
             <div class="level-right">
                 Contact
