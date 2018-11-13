@@ -1,6 +1,6 @@
 <template>
-    <section class="section" id="app">
-        <div class="level">
+    <section class="section container" id="app">
+        <div class="level top-level">
             <div class="level-left">
                 <div class="level-item">
                     <SebNav></SebNav>

@@ -35,3 +35,7 @@ $card-shadow: 0 4px 10px rgba(10, 10, 10, 0.1), 0px -1px 3px 0px rgba(10, 10, 10
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+.top-level {
+    height: 100px;
+}
