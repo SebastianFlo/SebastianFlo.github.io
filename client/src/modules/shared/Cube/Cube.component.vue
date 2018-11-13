@@ -4,8 +4,8 @@
                 <div class="right">right</div>
                 <!-- <div class="back">back</div> -->
                 <div class="top">top</div>
-                <!-- <div class="bottom">bottom</div> -->
                 <div class="left">left</div>
+                <div class="shadow"></div>
                 <!-- <div class="right">right</div> -->
             </div>
         </div>
