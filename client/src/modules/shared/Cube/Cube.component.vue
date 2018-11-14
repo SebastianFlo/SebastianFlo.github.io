@@ -1,7 +1,17 @@
 <template>
     <div class="wrap">
             <div class="cube">
-                <div class="right">right</div>
+                <div class="right">
+                    <div class="technology-icon">
+                        <img src="@/assets/angular.svg" alt="Angular">
+                    </div>
+                    <div class="technology-icon">
+                        <img src="@/assets/vue.png" alt="Angular">
+                    </div>
+                    <div class="technology-icon">
+                        <img src="@/assets/redux.svg" alt="Angular">
+                    </div>
+                </div>
                 <!-- <div class="back">back</div> -->
                 <div class="top">top <h1 v-text="'</>'"></h1></div>
                 <div class="left">left</div>
