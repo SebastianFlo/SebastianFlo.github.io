@@ -1,50 +1,47 @@
 <template>
     <div class="home">
         <div class="columns">
-            <div class="column has-text-centered is-one-third">
-                <Cube />
-            </div>
-
-            <div class="column has-text-centered"></div>
-
-            <div class="column has-text-centered is-one-third">
-                <Cube />
-            </div>
-
-            <div class="column has-text-centered"></div>
-
-            <div class="column has-text-centered">
-                <Cube />
+            <div v-for="project of projects.row1" :key="project.name" class="column has-text-centered is-one-third">
+                <Cube :project="project"/>
             </div>
         </div>
 
         <div class="columns">
-            <div class="column has-text-centered is-one-third">
-                <Cube />
-            </div>
-
-            <div class="column has-text-centered"></div>
-
-            <div class="column has-text-centered is-one-third">
-                <Cube />
-            </div>
-
-            <div class="column has-text-centered"></div>
-
-            <div class="column has-text-centered is-one-third">
-                <Cube />
+            <div v-for="project of projects.row2" :key="project.name" class="column has-text-centered is-one-third">
+                <Cube :project="project"/>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    import AppStore from '../../data/store.js';
     import Cube from '@/modules/shared/Cube/Cube.component';
 
     export default {
         name: 'home',
         components: {
             Cube
+        },
+        data() {
+            return {
+                unsubscribe: null,
+                projects: []
+            }
+        },
+        mounted() {
+            this.unsubscribe = AppStore.subscribe(this.onStateUpdate)
+        },
+        methods: {
+            onStateUpdate() {
+                if (this.projects !== AppStore.getState().projects) {
+                    // TODO: Split on columns here
+                    this.projects = AppStore.getState().projects;
+                }
+            }
+        },
+        destroyed() {
+            this.unsubscribe();
         }
     }
 </script>
