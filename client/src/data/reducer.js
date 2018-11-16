@@ -8,6 +8,12 @@ export const reducer = (state = initialState, action) => {
                 todos: [...state.todos, action.data.todo]
             }
 
+        case 'ADD_PROJECTS':
+            return {
+                ...state,
+                projects: action.data
+            }
+
         default:
             return state;
     }

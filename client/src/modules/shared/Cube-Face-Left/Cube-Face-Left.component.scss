@@ -1,0 +1,12 @@
+@import "~bulma/sass/utilities/_all";
+
+.face {
+    padding: $size-5;
+    .face-title {
+        font-size: $size-large;
+    }
+
+    .face-title {
+        font-weight: 200;
+    }
+}

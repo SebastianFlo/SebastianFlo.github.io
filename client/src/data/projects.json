@@ -1,0 +1,13 @@
+{
+    "projects": [
+        {
+            "name": "360 Giving",
+            "description": "Project to visualize how charities get funded. Finalist for the 360 Giving Challenge",
+            "technologies": [
+                "vue",
+                "angular",
+                "redux"
+            ]
+        }
+    ]
+}

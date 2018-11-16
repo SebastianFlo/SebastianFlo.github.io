@@ -22,11 +22,19 @@
 
 <script>
     import SebNav from './modules/core/Nav/Nav.component';
+    import Projects from './data/projects.json';
+    import AppStore from './data/store.js';
 
     export default {
         name: 'SebApp',
         components: {
             SebNav
+        },
+        mounted () {
+            AppStore.dispatch({
+                type: 'ADD_PROJECTS',
+                data: Projects.projects
+            });
         }
     }
 </script>
