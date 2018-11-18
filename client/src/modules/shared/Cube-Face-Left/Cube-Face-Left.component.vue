@@ -6,17 +6,17 @@
 </template>
 
 <script>
-    export default {
-        name: 'Cube-Face-Left',
-        props: {
-            header: {
-                type: String,
-            },
-            description: {
-                type: String,
-            },
+export default {
+    name: 'Cube-Face-Left',
+    props: {
+        header: {
+            type: String
+        },
+        description: {
+            type: String
         }
     }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

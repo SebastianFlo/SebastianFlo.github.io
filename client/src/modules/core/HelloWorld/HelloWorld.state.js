@@ -8,7 +8,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    addTodo(todo) {
+    addTodo (todo) {
         dispatch({
             type: 'ADD_TODO',
             data: { todo }

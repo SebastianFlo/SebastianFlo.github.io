@@ -56,23 +56,23 @@
 </template>
 
 <script>
-    export default {
-        props: {
-            todos: {
-                type: Array,
-            },
-            addTodo: {
-                type: Function,
-            },
+export default {
+    props: {
+        todos: {
+            type: Array
         },
-        methods: {
-            handleAddTodo() {
-                const todo = this.$refs.input.value;
-                this.addTodo(todo);
-            }
-        },
-        name: 'HelloWorld'
-    }
+        addTodo: {
+            type: Function
+        }
+    },
+    methods: {
+        handleAddTodo () {
+            const todo = this.$refs.input.value;
+            this.addTodo(todo);
+        }
+    },
+    name: 'HelloWorld'
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

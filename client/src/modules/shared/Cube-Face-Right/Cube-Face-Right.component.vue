@@ -7,21 +7,21 @@
 </template>
 
 <script>
-    import { technologiesInfo } from '../technologies.factory.js';
+import { technologiesInfo } from '@/modules/core/Utils/technologies.factory.js';
 
-    export default {
-        name: 'Cube-Face-Right',
-        props: {
-            technologies: {
-                type: Array,
-            },
-        },
-        computed: {
-            technologyData() {
-                return this.technologies.map(tech => technologiesInfo[tech]);
-            }
+export default {
+    name: 'Cube-Face-Right',
+    props: {
+        technologies: {
+            type: Array
+        }
+    },
+    computed: {
+        technologyData () {
+            return this.technologies.map(tech => technologiesInfo[tech]);
         }
     }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -5,11 +5,13 @@
                 <CubeFaceRight :technologies="project.technologies" />
             </div>
             <!-- <div class="back">back</div> -->
-            <div class="top">top <h1 v-text="'</>'"></h1>
+            <div class="top">top
+                    <router-link :to="{ name: 'project', params: { id: project.id }}">
+                        <h1 v-text="'</>'"></h1>
+                    </router-link>
             </div>
             <div class="left">
-                <CubeFaceLeft :header="project.name"
-                    :description="project.description" />
+                <CubeFaceLeft :header="project.name" :description="project.description" />
             </div>
             <div class="shadow"></div>
             <!-- <div class="right">right</div> -->
@@ -18,17 +20,17 @@
 </template>
 
 <script>
-    import CubeFaceRight from '../Cube-Face-Right/Cube-Face-Right.component';
-    import CubeFaceLeft from '../Cube-Face-Left/Cube-Face-Left.component';
+import CubeFaceRight from '../Cube-Face-Right/Cube-Face-Right.component';
+import CubeFaceLeft from '../Cube-Face-Left/Cube-Face-Left.component';
 
-    export default {
-        name: 'Cube',
-        props: ['project'],
-        components: {
-            CubeFaceRight,
-            CubeFaceLeft
-        }
+export default {
+    name: 'Cube',
+    props: ['project'],
+    components: {
+        CubeFaceRight,
+        CubeFaceLeft
     }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

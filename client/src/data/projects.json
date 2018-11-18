@@ -2,6 +2,7 @@
     "projects": {
         "row1": [
             {
+                "id": "360_giving",
                 "name": "360 Giving",
                 "description": "Project to visualize how charities get funded. Finalist for the 360 Giving Challenge",
                 "technologies": [
@@ -11,6 +12,7 @@
                 ]
             },
             {
+                "id": "rfid_module",
                 "name": "RFID Module",
                 "description": "Membership system for a coffee shop",
                 "technologies": [
@@ -20,6 +22,7 @@
                 ]
             },
             {
+                "id": "theahoeg",
                 "name": "theahoeg.com",
                 "description": "Brand website for architect",
                 "technologies": [
@@ -30,7 +33,8 @@
         ],
         "row2": [
             {
-                "name": "jyttehoeg",
+                "id": "jyttehoeg",
+                "name": "jyttehoeg.dk",
                 "description": "Website",
                 "technologies": [
                     "vue",
@@ -38,6 +42,7 @@
                 ]
             },
             {
+                "id": "falcon",
                 "name": "Falcon.io",
                 "description": "Company",
                 "technologies": [
@@ -45,6 +50,7 @@
                 ]
             },
             {
+                "id": "angular_elements",
                 "name": "Angular Elements",
                 "description": "Playing with stuff",
                 "technologies": [

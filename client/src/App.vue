@@ -8,7 +8,9 @@
         </div>
 
         <div class="section container is-fluid">
-            <router-view/>
+            <transition :name="transitionName">
+                <router-view />
+            </transition>
         </div>
 
         <div class="section level top-level">
@@ -30,11 +32,18 @@
         components: {
             SebNav
         },
-        mounted () {
+        mounted() {
             AppStore.dispatch({
                 type: 'ADD_PROJECTS',
                 data: Projects.projects
             });
+        },
+        watch: {
+            '$route'(to, from) {
+                const toDepth = to.path.split('/').length
+                const fromDepth = from.path.split('/').length
+                this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+            }
         }
     }
 </script>

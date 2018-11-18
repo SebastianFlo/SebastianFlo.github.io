@@ -1,7 +1,18 @@
 {
+    "root": true,
+    "env": {
+        "node": true
+    },
+    "extends": [
+        "plugin:vue/essential",
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "parser": "babel-eslint"
+    },
     "rules": {
         "indent": [
-            "error",
+            "warn",
             4
         ],
         "comma-dangle": [
@@ -17,7 +28,7 @@
         ],
         "max-len": [
             2,
-            100,
+            140,
             2,
             {
                 "ignoreUrls": true,

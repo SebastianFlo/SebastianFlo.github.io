@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "SebastianFlo.github.io"
+    "liveServer.settings.multiRootWorkspaceName": "SebastianFlo.github.io",
+    "eslint.enable": true
 }

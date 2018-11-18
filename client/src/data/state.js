@@ -1,4 +1,8 @@
 export const initialState = {
     todos: [],
-    projects: []
+    projects: [],
+    active: {
+        project: {}
+    }
 };
+
