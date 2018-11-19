@@ -8,8 +8,11 @@
         </div>
 
         <div class="section container is-fluid">
-            <transition :name="transitionName">
-                <router-view />
+            <transition
+                :name="router-animation"
+                enter-active-class="animated slideInUp"
+                leave-active-class="slideInDown">
+                <router-view/>
             </transition>
         </div>
 
@@ -32,18 +35,15 @@
         components: {
             SebNav
         },
+        data () {
+            return {
+            }
+        },
         mounted() {
             AppStore.dispatch({
                 type: 'ADD_PROJECTS',
                 data: Projects.projects
             });
-        },
-        watch: {
-            '$route'(to, from) {
-                const toDepth = to.path.split('/').length
-                const fromDepth = from.path.split('/').length
-                this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
-            }
         }
     }
 </script>

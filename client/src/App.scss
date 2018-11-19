@@ -36,28 +36,12 @@ $card-shadow: 0 4px 10px rgba(10, 10, 10, 0.1), 0px -1px 3px 0px rgba(10, 10, 10
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 
+@import "~animate.css";
+
 .top-level {
     height: 100px;
 
     .header-brand {
         margin-right: $size-6
     }
-}
-
-.slide-enter-active, .slide-leave-active {
-    transition: margin-bottom .8s ease-out;
-}
-
-/*
-you set the css property before transition starts
-*/
-.slide-enter, .slide-leave-to {
-    margin-bottom: -200px;
-}
-
-/*
-you set the css property it will be when transition ends
-*/
-.slide-enter-to, .slide-leave {
-    margin-bottom: 0px;
 }
