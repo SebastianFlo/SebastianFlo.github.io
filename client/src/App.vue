@@ -8,21 +8,16 @@
         </div>
 
         <div class="section container is-fluid">
-            <!-- <transition
-                :name="router-anim"
-                enter-active-class="animated slideInUp"
-                leave-active-class="slideInDown">
-                <router-view/>
-            </transition> -->
             <transition :name="'router-anim'">
                 <router-view/>
             </transition>
         </div>
 
         <div class="section level top-level">
-            <div class="level-left"></div>
-            <div class="level-right">
+            <div class="level-left">
                 Contact
+            </div>
+            <div class="level-right">
             </div>
         </div>
     </section>

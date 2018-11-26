@@ -1,5 +1,5 @@
 <template>
-    <div class="project">
+    <!-- <div class="project">
         <div class="columns">
             <div class="column is-one-third">
                 This is the project page
@@ -15,6 +15,39 @@
                 {{ project.description }}
             </div>
         </div>
+    </div> -->
+
+    <div class="tile is-ancestor">
+        <div class="tile is-vertical">
+            <div class="tile">
+                <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-warning">
+                    <p class="title">{{ project.name }}</p>
+                    <p class="subtitle">{{ project.description }}</p>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child">
+                        <figure class="image is-4by3">
+                            <img class="preview-computer" src="@/assets/computer.svg">
+                        </figure>
+                    </article>
+                </div>
+            </div>
+            <div class="tile is-parent">
+            <article class="tile is-child notification is-warning">
+                <p class="title">Technology</p>
+                <p class="subtitle">And other stuff</p>
+                <div class="content">
+                    <div v-for="tech in technologyData" v-bind:key="tech.name" class="technology-icon">
+                        <img width="50" :src="require(`@/assets/${tech.icon}`)" :alt="tech.name">
+                        {{ tech.name }}
+                    </div>
+                </div>
+            </article>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -24,14 +57,14 @@ import { technologiesInfo } from '@/modules/core/Utils/technologies.factory.js';
 
 export default {
     name: 'project',
-    data () {
+    data() {
         return {
             project: {},
             screenshot: ''
         }
     },
     props: ['id'],
-    mounted () {
+    mounted() {
         this.unsubscribe = AppStore.subscribe(this.onStateUpdate);
         // set active Project
         AppStore.dispatch({
@@ -41,7 +74,7 @@ export default {
 
     },
     methods: {
-        onStateUpdate () {
+        onStateUpdate() {
             if (this.project !== AppStore.getState().active.project) {
                 this.project = AppStore.getState().active.project;
                 this.screenshot = technologiesInfo[this.project.technologies[0]].icon
@@ -49,13 +82,18 @@ export default {
         }
     },
     watch: {
-        '$route' (to) {
+        '$route'(to) {
             // eslint-disable-next-line
-                console.log('to', to);
+            console.log('to', to);
 
         }
     },
-    destroyed () {
+    computed: {
+        technologyData () {
+            return this.project.technologies.map(tech => technologiesInfo[tech]);
+        }
+    },
+    destroyed() {
         this.unsubscribe();
     }
 }
