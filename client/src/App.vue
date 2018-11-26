@@ -8,10 +8,13 @@
         </div>
 
         <div class="section container is-fluid">
-            <transition
-                :name="router-animation"
+            <!-- <transition
+                :name="router-anim"
                 enter-active-class="animated slideInUp"
                 leave-active-class="slideInDown">
+                <router-view/>
+            </transition> -->
+            <transition :name="'router-anim'">
                 <router-view/>
             </transition>
         </div>
@@ -26,26 +29,26 @@
 </template>
 
 <script>
-    import SebNav from './modules/core/Nav/Nav.component';
-    import Projects from './data/projects.json';
-    import AppStore from './data/store.js';
+import SebNav from './modules/core/Nav/Nav.component';
+import Projects from './data/projects.json';
+import AppStore from './data/store.js';
 
-    export default {
-        name: 'SebApp',
-        components: {
-            SebNav
-        },
-        data () {
-            return {
-            }
-        },
-        mounted() {
-            AppStore.dispatch({
-                type: 'ADD_PROJECTS',
-                data: Projects.projects
-            });
-        }
+export default {
+    name: 'SebApp',
+    components: {
+        SebNav
+    },
+    // data () {
+    //     return {
+    //     }
+    // },
+    mounted () {
+        AppStore.dispatch({
+            type: 'ADD_PROJECTS',
+            data: Projects.projects
+        });
     }
+}
 </script>
 
 <style lang="scss">
