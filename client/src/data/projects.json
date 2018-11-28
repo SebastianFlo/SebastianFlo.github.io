@@ -5,6 +5,7 @@
                 "id": "360_giving",
                 "name": "360 Giving",
                 "description": "Project to visualize how charities get funded. Finalist for the 360 Giving Challenge",
+                "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
                     "vue",
                     "angular",
@@ -15,6 +16,7 @@
                 "id": "rfid_module",
                 "name": "RFID Module",
                 "description": "Membership system for a coffee shop",
+                "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
                     "vue",
                     "angular",
@@ -25,6 +27,7 @@
                 "id": "theahoeg",
                 "name": "theahoeg.com",
                 "description": "Brand website for architect",
+                "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
                     "angular",
                     "redux"
@@ -36,6 +39,7 @@
                 "id": "jyttehoeg",
                 "name": "jyttehoeg.dk",
                 "description": "Website",
+                "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
                     "vue",
                     "redux"
@@ -45,6 +49,7 @@
                 "id": "falcon",
                 "name": "Falcon.io",
                 "description": "Company",
+                "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
                     "vue"
                 ]
@@ -53,6 +58,7 @@
                 "id": "angular_elements",
                 "name": "Angular Elements",
                 "description": "Playing with stuff",
+                "preview": "https://github.com/SebastianFlo/vue-organizations-visualisations/blob/master/src/assets/screenshot.jpg",
                 "technologies": [
                     "angular"
                 ]

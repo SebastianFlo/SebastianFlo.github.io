@@ -19,7 +19,7 @@
                 <div class="tile is-parent">
                     <article class="tile is-child">
                         <figure class="image is-4by3">
-                            <img class="preview-computer" src="@/assets/computer.svg">
+                            <Preview v-bind:image="project.preview"/>
                         </figure>
                     </article>
                 </div>
@@ -43,13 +43,13 @@
 <script>
 import AppStore from '../../data/store.js';
 import { technologiesInfo } from '@/modules/core/Utils/technologies.factory.js';
+import Preview from './Preview/Preview.component';
 
 export default {
     name: 'project',
     data() {
         return {
             project: {},
-            screenshot: ''
         }
     },
     props: ['id'],
@@ -62,11 +62,13 @@ export default {
         });
 
     },
+    components: {
+        Preview
+    },
     methods: {
         onStateUpdate() {
             if (this.project !== AppStore.getState().active.project) {
                 this.project = AppStore.getState().active.project;
-                this.screenshot = technologiesInfo[this.project.technologies[0]].icon
             }
         }
     },
