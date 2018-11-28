@@ -1,24 +1,13 @@
 <template>
-    <!-- <div class="project">
-        <div class="columns">
-            <div class="column is-one-third">
-                This is the project page
-                <h1>{{ project.name }}</h1>
-            </div>
-            <div class="column has-text-centered">
-                This is the project photo
-                <img v-if="screenshot" :src="require(`@/assets/${screenshot}`)">
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column has-text-centered">
-                {{ project.description }}
-            </div>
-        </div>
-    </div> -->
-
     <div class="tile is-ancestor">
         <div class="tile is-vertical">
+            <div class="tile is-parent is-vertical">
+                <article class="tile is-child">
+                    <router-link :to="'../'">
+                        <h1 v-text="'< Back'"></h1>
+                    </router-link>
+                </article>
+            </div>
             <div class="tile">
                 <div class="tile is-parent is-vertical">
                     <article class="tile is-child notification is-warning">
@@ -90,6 +79,9 @@ export default {
     },
     computed: {
         technologyData () {
+            if (!this.project || !this.project.technologies) {
+                return [];
+            }
             return this.project.technologies.map(tech => technologiesInfo[tech]);
         }
     },

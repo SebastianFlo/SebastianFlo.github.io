@@ -8,6 +8,7 @@ import store from './data/store';
 // Config
 import App from './App.vue'
 import router from './router'
+import './registerServiceWorker'
 
 Vue.use(Buefy)
 Vue.use(reduxStorePlugin);

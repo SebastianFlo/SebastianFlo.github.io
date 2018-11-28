@@ -13,12 +13,14 @@
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-vue": "^0.7.1",
+    "register-service-worker": "^1.5.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",
     "@vue/cli-plugin-eslint": "^3.1.1",
+    "@vue/cli-plugin-pwa": "^3.2.0",
     "@vue/cli-service": "^3.1.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
