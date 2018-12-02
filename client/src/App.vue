@@ -2,7 +2,7 @@
     <section class="container" id="app">
         <div class="section level top-level">
             <div class="level-left">
-                <div class="header-brand">sebastian.party</div>
+                <div class="header-brand">sebastian florian</div>
                 <SebNav></SebNav>
             </div>
         </div>
@@ -15,9 +15,10 @@
 
         <div class="section level top-level">
             <div class="level-left">
-                Contact
+                <!-- Contact -->
             </div>
             <div class="level-right">
+                <SebContact/>
             </div>
         </div>
     </section>
@@ -25,13 +26,16 @@
 
 <script>
 import SebNav from './modules/core/Nav/Nav.component';
+import SebContact from './modules/core/Contact/Contact.component';
+
 import Projects from './data/projects.json';
 import AppStore from './data/store.js';
 
 export default {
     name: 'SebApp',
     components: {
-        SebNav
+        SebNav,
+        SebContact
     },
     // data () {
     //     return {
