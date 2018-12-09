@@ -25,16 +25,21 @@
                 </div>
             </div>
             <div class="tile is-parent">
-            <article class="tile is-child notification is-warning">
-                <p class="title">Technology</p>
-                <p class="subtitle">And other stuff</p>
-                <div class="content">
-                    <div v-for="tech in technologyData" v-bind:key="tech.name" class="technology-icon">
-                        <img width="50" :src="require(`@/assets/${tech.icon}`)" :alt="tech.name">
-                        {{ tech.name }}
+                <article class="tile is-child notification is-warning">
+                    <p class="subtitle">Description</p>
+
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-warning">
+                    <p class="subtitle">Technology</p>
+                    <div class="content">
+                        <div v-for="tech in technologyData" v-bind:key="tech.name" class="technology-icon">
+                            <img width="50" :src="require(`@/assets/${tech.icon}`)" :alt="tech.name">
+                            {{ tech.name }}
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
             </div>
         </div>
     </div>
@@ -49,7 +54,7 @@ export default {
     name: 'project',
     data() {
         return {
-            project: {},
+            project: {}
         }
     },
     props: ['id'],

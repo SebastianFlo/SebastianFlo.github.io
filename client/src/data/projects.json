@@ -49,16 +49,16 @@
                 "year": 2016,
                 "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
-                    "php",
                     "wordpress",
-                    "jquery"
+                    "jquery",
+                    "php"
                 ]
             }
         ],
         "row2": [
             {
                 "id": "nfc_membership",
-                "name": "Cafe Shop - NFC Membership",
+                "name": "Cafe Shop -  NFC Membership",
                 "shortDescription": "Wireless card membership system for a cafe",
                 "longDescription": "A full card based membership solution for a cafe. The requirement was that members could scan a card or a sticker on the scanner, and on the press of a button they could either be registered as new members or checked if still valid members. The solution runs on a raspberry pi, and deployed using Docker containers. The server is built in Python using Flask, and the scanning is done using a Node based NFC Library",
                 "private": false,

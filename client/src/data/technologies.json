@@ -1,0 +1,72 @@
+{
+    "vue": {
+        "icon": "vue.png",
+        "name": "Vue",
+        "link": "https://vuejs.org/"
+    },
+    "redux": {
+        "icon": "redux.svg",
+        "name": "Redux",
+        "link": "https://redux.js.org/"
+    },
+    "angular": {
+        "icon": "angular.svg",
+        "name": "Angular",
+        "link": "https://angular.io/"
+    },
+    "grapesjs": {
+        "icon": "grapesjs.png",
+        "name": "GrapesJs",
+        "link": "https://grapesjs.com/"
+    },
+    "python": {
+        "icon": "python.svg",
+        "name": "Python",
+        "link": "https://www.python.org/"
+    },
+    "flask": {
+        "icon": "flask.png",
+        "name": "Flask",
+        "link": "http://flask.pocoo.org/"
+    },
+    "d3": {
+        "icon": "d3.svg",
+        "name": "D3",
+        "link": "https://d3js.org/"
+    },
+    "bootsrap": {
+        "icon": "bootstrap.svg",
+        "name": "Bootstrap",
+        "link": "https://getbootstrap.com/"
+    },
+    "webpack": {
+        "icon": "webpack.png",
+        "name": "Webpack",
+        "link": "https://webpack.js.org/"
+    },
+    "php": {
+        "icon": "php.svg",
+        "name": "PHP",
+        "link": "http://www.php.net/"
+    },
+    "wordpress": {
+        "icon": "wordpress.svg",
+        "name": "Wordpress",
+        "link": "https://wordpress.com/"
+    },
+    "jquery": {
+        "icon": "jquery.svg",
+        "name": "jQuery",
+        "link": "https://jquery.com/"
+    },
+    "node": {
+        "icon": "node.svg",
+        "name": "Node",
+        "link": "https://nodejs.org/"
+    },
+    "docker": {
+        "icon": "docker.svg",
+        "name": "Docker",
+        "link": "https://www.docker.com/"
+    }
+}

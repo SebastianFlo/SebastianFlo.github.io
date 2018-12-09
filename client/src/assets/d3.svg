@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="94" width="100"><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none" class="selected" style=""/>
+    <clipPath id="clip">
+      <path d="M0,0h7.75a45.5,45.5 0 1 1 0,91h-7.75v-20h7.75a25.5,25.5 0 1 0 0,-51h-7.75zm36.2510,0h32a27.75,27.75 0 0 1 21.331,45.5a27.75,27.75 0 0 1 -21.331,45.5h-32a53.6895,53.6895 0 0 0 18.7464,-20h13.2526a7.75,7.75 0 1 0 0,-15.5h-7.75a53.6895,53.6895 0 0 0 0,-20h7.75a7.75,7.75 0 1 0 0,-15.5h-13.2526a53.6895,53.6895 0 0 0 -18.7464,-20z" id="svg_1"/>
+    </clipPath>
+    <linearGradient id="gradient-1" x1="0.4466666579246521" y1="0.5533333420753479" x2="0.5899999737739563" y2="0.6966666579246521">
+      <stop offset="0" stop-color="#f9a03c"/>
+      <stop offset="1" stop-color="#f7974e"/>
+    </linearGradient>
+    <linearGradient id="gradient-2" x1="0.3400000035762787" y1="0.3333333432674408" x2="0.6233333349227905" y2="0.6200000047683716">
+      <stop offset="0" stop-color="#f26d58"/>
+      <stop offset="1" stop-color="#f9a03c"/>
+    </linearGradient>
+    <linearGradient id="gradient-3" x1="0.44342508912086487" y1="0.30666667222976685" x2="0.6360856294631958" y2="0.5166666507720947">
+      <stop offset="0" stop-color="#b84e51"/>
+      <stop offset="1" stop-color="#f68e48"/>
+    </linearGradient>
+    
+<g class="currentLayer" style=""><title>Layer 1</title><g clip-path="url(#clip)" id="svg_2" class="selected">
+      <path d="M-100,-102m-27,0v300h300z" fill="url(#gradient-1)" id="svg_3"/>
+      <path d="M-100,-102m27,0h300v300z" fill="url(#gradient-3)" id="svg_4"/>
+      <path d="M-100,-102l300,300" fill="none" stroke="url(#gradient-2)" stroke-width="40" id="svg_5"/>
+    </g></g></svg>
