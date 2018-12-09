@@ -2,65 +2,108 @@
     "projects": {
         "row1": [
             {
-                "id": "360_giving",
-                "name": "360 Giving",
-                "description": "Project to visualize how charities get funded. Finalist for the 360 Giving Challenge",
+                "id": "sef_cms_website_builder",
+                "name": "SEF-CMS Website Builder",
+                "shortDescription": "Custom Visual Website using a drag and drop interface",
+                "longDescription": "Website building framework build on GrapesJs using VueJs and Vuex. Backend built using Python/Flask",
+                "private": false,
+                "url": "",
+                "demo": "",
+                "githubLink": "https://github.com/SebastianFlo/grape-js-vue",
+                "year": 2018,
                 "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
                     "vue",
-                    "angular",
-                    "redux"
+                    "grapesjs",
+                    "python",
+                    "flask"
                 ]
             },
             {
-                "id": "rfid_module",
-                "name": "RFID Module",
-                "description": "Membership system for a coffee shop",
+                "id": "360_giving",
+                "name": "360Giving Data Visualization",
+                "shortDescription": "Data Visualization for Charity Donations",
+                "longDescription": "Visualisation of a large set of data from 360Giving. They needed different ways to visualize the main charities and who funds them, as well as breakdowns on the types of charities and grants",
+                "private": false,
+                "url": "",
+                "demo": "",
+                "githubLink": "https://github.com/SebastianFlo/vue-organizations-visualisations",
+                "year": 2018,
                 "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
                     "vue",
-                    "angular",
-                    "redux"
+                    "d3",
+                    "bootsrap",
+                    "webpack"
                 ]
             },
             {
                 "id": "theahoeg",
                 "name": "theahoeg.com",
-                "description": "Brand website for architect",
+                "shortDescription": "Portfolio website for Architect and Designer Thea Høeg",
+                "longDescription": "Website with a minimalist theme built using Wordpress",
+                "private": true,
+                "url": "http://theahoeg.com/",
+                "demo": "",
+                "githubLink": "https://github.com/SebastianFlo/grape-js-vue",
+                "year": 2016,
                 "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
-                    "angular",
-                    "redux"
+                    "php",
+                    "wordpress",
+                    "jquery"
                 ]
             }
         ],
         "row2": [
             {
-                "id": "jyttehoeg",
-                "name": "jyttehoeg.dk",
-                "description": "Website",
+                "id": "nfc_membership",
+                "name": "Cafe Shop - NFC Membership",
+                "shortDescription": "Wireless card membership system for a cafe",
+                "longDescription": "A full card based membership solution for a cafe. The requirement was that members could scan a card or a sticker on the scanner, and on the press of a button they could either be registered as new members or checked if still valid members. The solution runs on a raspberry pi, and deployed using Docker containers. The server is built in Python using Flask, and the scanning is done using a Node based NFC Library",
+                "private": false,
+                "url": "",
+                "demo": "",
+                "githubLink": "https://github.com/SebastianFlo/b-nfc-membership",
+                "year": 2018,
                 "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
-                    "vue",
-                    "redux"
+                    "node",
+                    "python",
+                    "flask",
+                    "docker"
                 ]
             },
             {
-                "id": "falcon",
-                "name": "Falcon.io",
-                "description": "Company",
+                "id": "gettheevent.com",
+                "name": "GetTheEvent.com",
+                "shortDescription": "Crowdsourcing platform for finding event professionals",
+                "longDescription": "An online crowdsourcing application for creating events and having professionals from the event industry create profiles and bid on the event. Profile pages, rating system, and event creation. I created the frontend application using AngularJS, and was the first time I experimented with Docker",
+                "private": true,
+                "url": "https://gettheevent.com/",
+                "demo": "",
+                "githubLink": "",
+                "year": 2015,
                 "preview": "https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg",
                 "technologies": [
-                    "vue"
+                    "angular",
+                    "docker"
                 ]
             },
             {
-                "id": "angular_elements",
-                "name": "Angular Elements",
-                "description": "Playing with stuff",
+                "id": "playground_upgrade_angular",
+                "name": "Playground: Upgrading State Managed Angular",
+                "shortDescription": "Experimenting with upgrading an AngularJs application to Angular",
+                "longDescription": "In this project I upgraded an AngularJs application that uses a Redux store as a state management system. The applications are then bootstrapped together, and can run in hybrid mode, and the redux store is shared",
+                "private": false,
+                "url": "",
+                "demo": "",
+                "githubLink": "https://github.com/SebastianFlo/angular-angularjs-upgrade-redux",
+                "year": 2017,
                 "preview": "https://github.com/SebastianFlo/vue-organizations-visualisations/blob/master/src/assets/screenshot.jpg",
                 "technologies": [
-                    "angular"
+                    "angular",
+                    "redux"
                 ]
             }
         ]
