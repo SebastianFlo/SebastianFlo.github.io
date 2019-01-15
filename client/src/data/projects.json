@@ -76,7 +76,7 @@
             },
             {
                 "id": "gettheevent.com",
-                "name": "GetTheEvent.com",
+                "name": "gettheevent.com",
                 "shortDescription": "Crowdsourcing platform for finding event professionals",
                 "longDescription": "An online crowdsourcing application for creating events and having professionals from the event industry create profiles and bid on the event. Profile pages, rating system, and event creation. I created the frontend application using AngularJS, and was the first time I experimented with Docker",
                 "private": true,

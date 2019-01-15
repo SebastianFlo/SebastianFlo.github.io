@@ -11,8 +11,14 @@
             <div class="tile">
                 <div class="tile is-parent is-vertical">
                     <article class="tile is-child notification is-warning">
-                    <p class="title">{{ project.name }}</p>
-                    <p class="subtitle">{{ project.description }}</p>
+                        <p class="title">{{ project.name }}</p>
+                        <div v-if="project.url">
+                            <a :href="project.url" target="new">Url</a>
+                        </div>
+                        <div v-if="project.githubLink">
+                            <a :href="project.githubLink" target="new">Github Link</a>
+                        </div>
+                        <p class="subtitle">{{ project.shortDescription }}</p>
                     </article>
                 </div>
 
@@ -27,7 +33,7 @@
             <div class="tile is-parent">
                 <article class="tile is-child notification is-warning">
                     <p class="subtitle">Description</p>
-
+                    <p>{{ project.longDescription }}</p>
                 </article>
             </div>
             <div class="tile is-parent">
