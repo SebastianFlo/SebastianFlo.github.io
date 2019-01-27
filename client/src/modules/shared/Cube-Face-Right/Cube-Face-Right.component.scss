@@ -10,4 +10,9 @@ $side-color: $yellow;
     float: left;
     background: none;
     border: 1px solid darken( $side-color, 20%);
+
+
+    img {
+        filter: grayscale(100%);
+    }
 }

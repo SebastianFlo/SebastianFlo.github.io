@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-for="tech in technologyData" v-bind:key="tech.name" class="technology-icon">
-            <img  :src="require(`@/assets/${tech.icon}`)" :alt="tech.name">
+            <img :src="require(`@/assets/${tech.icon}`)" :alt="tech.name">
         </div>
     </div>
 </template>
