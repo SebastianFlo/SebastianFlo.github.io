@@ -24,10 +24,17 @@
 
                 <div class="tile is-parent">
                     <article class="tile is-child">
-                        <figure class="image is-4by3">
+                        <figure @click="modalOpen = true" class="image is-4by3">
                             <Preview v-bind:image="project.preview"/>
                         </figure>
                     </article>
+
+                    <b-modal :active.sync="modalOpen">
+                        <p class="image">
+                            <img :src="project.preview">
+                        </p>
+                    </b-modal>
+
                 </div>
             </div>
             <div class="tile is-parent">
@@ -60,7 +67,8 @@ export default {
     name: 'project',
     data() {
         return {
-            project: {}
+            project: {},
+            modalOpen: false
         }
     },
     props: ['id'],
