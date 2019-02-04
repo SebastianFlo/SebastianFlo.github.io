@@ -6,7 +6,6 @@ WORKDIR /usr/src/app
 
 # Copy npm package files
 COPY package*.json ./
-COPY .git ./
 
 # Install npm dependencies
 # RUN npm set progress=false && npm i --silent
