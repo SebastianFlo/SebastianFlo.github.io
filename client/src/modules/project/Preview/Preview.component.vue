@@ -8,10 +8,10 @@
 <script>
 
 
-    export default {
-        name: 'Preview',
-        props: ['image']
-    }
+export default {
+    name: 'Preview',
+    props: ['image']
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

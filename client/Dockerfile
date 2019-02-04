@@ -1,5 +1,4 @@
 ### STAGE 1: Build ###
-
 FROM node:9.11.1-alpine as builder
 
 # Change directory so that our commands run inside this new directory

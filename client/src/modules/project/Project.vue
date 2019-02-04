@@ -65,14 +65,14 @@ import Preview from './Preview/Preview.component';
 
 export default {
     name: 'project',
-    data() {
+    data () {
         return {
             project: {},
             modalOpen: false
         }
     },
     props: ['id'],
-    mounted() {
+    mounted () {
         this.unsubscribe = AppStore.subscribe(this.onStateUpdate);
         // set active Project
         AppStore.dispatch({
@@ -85,14 +85,14 @@ export default {
         Preview
     },
     methods: {
-        onStateUpdate() {
+        onStateUpdate () {
             if (this.project !== AppStore.getState().active.project) {
                 this.project = AppStore.getState().active.project;
             }
         }
     },
     watch: {
-        '$route'(to) {
+        '$route' (to) {
             // eslint-disable-next-line
             console.log('to', to);
 
@@ -106,7 +106,7 @@ export default {
             return this.project.technologies.map(tech => technologiesInfo[tech]);
         }
     },
-    destroyed() {
+    destroyed () {
         this.unsubscribe();
     }
 }
