@@ -5,13 +5,13 @@
                 <CubeFaceRight :technologies="project.technologies" />
             </div>
             <!-- <div class="back">back</div> -->
-            <div class="top">top
-                    <router-link :to="{ name: 'project', params: { id: project.id }}">
-                        <h1 v-text="'</>'"></h1>
-                    </router-link>
+            <div class="top">
+                <router-link :to="{ name: 'project', params: { id: project.id }}">
+                    <h1 v-text="'</>'"></h1>
+                </router-link>
             </div>
             <div class="left">
-                <CubeFaceLeft :header="project.name" :description="project.description" />
+                <CubeFaceLeft :header="project.name" :description="project.description" :year="project.year"/>
             </div>
             <div class="shadow"></div>
             <!-- <div class="right">right</div> -->

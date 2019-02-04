@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div v-for="tech in technologyData" v-bind:key="tech.name" class="technology-icon">
+        <b-tooltip v-for="tech in technologyData" :label="tech.name" v-bind:key="tech.name" class="technology-icon">
             <img :src="require(`@/assets/${tech.icon}`)" :alt="tech.name">
-        </div>
+        </b-tooltip>
     </div>
 </template>
 

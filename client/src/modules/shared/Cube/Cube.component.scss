@@ -45,8 +45,8 @@ $side-color: $yellow;
 
             .technology-icon {
                 padding: 5px;
-                width: 50%;
-                height: 50%;
+                width: 25%;
+                height: 25%;
                 position: relative;
                 float: left;
                 background: none;
@@ -68,7 +68,8 @@ $side-color: $yellow;
                 color: darken( $side-color, 20%);
                 opacity: 0.8;
                 font-size: 100px;
-                transform: rotateZ(-45deg);
+                transform: rotateZ(-45deg) translateX(-15px);
+                // margin-top: 15px;
             }
         }
     }
