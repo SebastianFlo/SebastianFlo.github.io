@@ -9,7 +9,8 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install npm dependencies
-RUN npm set progress=false && npm i --silent
+# RUN npm set progress=false && npm i --silent
+RUN npm i --verbose
 
 # Copy app files to out container
 COPY . .
