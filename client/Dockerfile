@@ -9,7 +9,7 @@ COPY package*.json ./
 
 # Install npm dependencies
 # RUN npm set progress=false && npm i --silent
-RUN npm i --verbose
+RUN npm i
 
 # Copy app files to out container
 COPY . .
