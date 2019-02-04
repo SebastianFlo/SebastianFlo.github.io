@@ -1,6 +1,7 @@
 ### STAGE 1: Build ###
 FROM node:10-alpine as builder
 
+
 # Change directory so that our commands run inside this new directory
 WORKDIR /usr/src/app
 
@@ -21,6 +22,7 @@ RUN npm run build
 ### STAGE 2: Setup ###
 FROM nginx:1.12-alpine
 
+# Copy certificates here
 COPY ./nginx-custom.conf /etc/nginx/conf.d/default.conf
 
 # Copy build files from first image to nginx dir
