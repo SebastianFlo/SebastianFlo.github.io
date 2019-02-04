@@ -9,7 +9,6 @@ COPY package*.json ./
 
 # Install npm dependencies
 # RUN npm set progress=false && npm i --silent
-RUN npm install node-sass@latest
 RUN npm i
 
 # Copy app files to out container
