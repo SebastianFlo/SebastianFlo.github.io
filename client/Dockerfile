@@ -20,9 +20,8 @@ COPY . .
 RUN npm run build
 
 ### STAGE 2: Setup ###
-FROM nginx:1.12-alpine
+FROM nginx:1.14-alpine
 
-# Copy certificates here
 COPY ./nginx-custom.conf /etc/nginx/conf.d/default.conf
 
 # Copy build files from first image to nginx dir
