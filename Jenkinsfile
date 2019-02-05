@@ -27,7 +27,7 @@ pipeline {
         //     docker pull caroso1222/ts-ast-viewer:latest && \
         sh "docker stop seb_party0 && \
             docker rm seb_party0 && \
-            docker run -d --name=seb_party0 -p 80:80 sebastianflo/sebastian.party"
+            docker run -d -v /var/www/ssl:/etc/ssl/cert:ro --name=seb_party0 -p 80:80 sebastianflo/sebastian.party"
     }
     }
 
