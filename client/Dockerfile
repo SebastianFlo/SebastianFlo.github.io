@@ -6,9 +6,8 @@ FROM node:10-alpine as builder
 WORKDIR /usr/src/app
 
 # Copy npm package files
-# COPY package*.json ./
+COPY package*.json ./
 # COPY package.json ./
-COPY . ./
 
 # Install npm dependencies
 # RUN npm set progress=false && npm i --silent
