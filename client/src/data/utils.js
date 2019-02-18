@@ -1,4 +1,4 @@
-import Projects from './projects.json';
+import Projects from './mocks/projects.json';
 
 const projects = [...Projects.projects.row1, ...Projects.projects.row2];
 

@@ -26,5 +26,13 @@ export default new Router({
             name: 'project',
             component: () => import(/* webpackChunkName: "project" */ './modules/project/Project.vue')
         }
-    ]
+    ],
+    scrollBehavior () {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve({ x: 0, y: 0 })
+            }, 1000)
+        });
+        // return { x: 0, y: 0 };
+    }
 })

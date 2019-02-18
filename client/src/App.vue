@@ -7,10 +7,12 @@
             </div>
         </div>
 
-        <div class="section container is-fluid">
-            <transition :name="'router-anim'">
-                <router-view/>
-            </transition>
+        <div class="section">
+            <div class="container is-fluid">
+                <transition :name="'router-anim'">
+                    <router-view/>
+                </transition>
+            </div>
         </div>
 
         <div class="section level top-level">
@@ -28,8 +30,9 @@
 import SebNav from './modules/core/Nav/Nav.component';
 import SebContact from './modules/core/Contact/Contact.component';
 
-import Projects from './data/projects.json';
+import Projects from './data/mocks/projects.json';
 import AppStore from './data/store.js';
+import { getLatestBlogPost } from './api/blog/blog.api.js';
 
 export default {
     name: 'SebApp',
@@ -42,6 +45,8 @@ export default {
     //     }
     // },
     mounted () {
+        getLatestBlogPost();
+
         AppStore.dispatch({
             type: 'ADD_PROJECTS',
             data: Projects.projects

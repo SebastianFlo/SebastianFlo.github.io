@@ -1,7 +1,9 @@
 <template>
     <div class="face">
-        <div class="face-title">{{ header }} </div>
-        <div class="face-description">{{ description }} </div>
+        <router-link :to="{ name: 'project', params: { id: projectId }}">
+            <div class="face-title">{{ header }} </div>
+            <div class="face-description">{{ description }} </div>
+        </router-link>
     </div>
 </template>
 
@@ -13,6 +15,9 @@ export default {
             type: String
         },
         description: {
+            type: String
+        },
+        projectId: {
             type: String
         }
     }

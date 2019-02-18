@@ -1,0 +1,15 @@
+{
+    "blog": {
+        "posts": [
+            {
+                "author": "Sebastian F.",
+                "url": "https://medium.com",
+                "authorAvatar": "https://bulma.io/images/placeholders/96x96.png",
+                "coverImage": "https://placeimg.com/1000/300/arch",
+                "date": "2019-02-23T23:00:00.000Z",
+                "title": "Part 1: Upgrading an AngularJs application to Angular 8",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit Phasellus nec iaculis mauris Phasellus nec iaculis mauris Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus nec iaculis mauris Phasellus nec iaculis mauris"
+            }
+        ]
+    }
+}

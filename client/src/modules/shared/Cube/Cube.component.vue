@@ -11,7 +11,7 @@
                 </router-link>
             </div>
             <div class="left">
-                <CubeFaceLeft :header="project.name" :description="project.description" :year="project.year"/>
+                <CubeFaceLeft :projectId="project.id" :header="project.name" :description="project.description" :year="project.year"/>
             </div>
             <div class="shadow"></div>
             <!-- <div class="right">right</div> -->

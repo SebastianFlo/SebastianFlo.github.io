@@ -2,8 +2,12 @@
 
 .face {
     padding: $size-5;
-    .face-title {
-        font-size: $size-large;
-        font-weight: 200;
+
+    a {
+        color: $grey-dark;
+        .face-title {
+            font-size: $size-large;
+            font-weight: 200;
+        }
     }
 }

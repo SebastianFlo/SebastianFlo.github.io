@@ -33,6 +33,9 @@ $link-focus-border: $primary;
 $card-background-color: $yellow;
 $card-shadow: 0 4px 10px rgba(10, 10, 10, 0.1), 0px -1px 3px 0px rgba(10, 10, 10, 0.1);
 
+$radius: 15px;
+
+
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
@@ -62,6 +65,10 @@ $card-shadow: 0 4px 10px rgba(10, 10, 10, 0.1), 0px -1px 3px 0px rgba(10, 10, 10
     cursor: pointer;
 }
 
+.title {
+    font-weight: 200;
+}
+
 @keyframes going {
     from {
         transform: translateY(0);
@@ -83,4 +90,12 @@ $card-shadow: 0 4px 10px rgba(10, 10, 10, 0.1), 0px -1px 3px 0px rgba(10, 10, 10
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.sef-rounded {
+    border-radius: 15px;
+}
+
+.sef-rounded-top {
+    border-radius: 15px 15px 0 0;
 }

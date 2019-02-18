@@ -15,11 +15,21 @@ export const reducer = (state = initialState, action) => {
             projects: action.data
         }
 
+    case 'ADD_BLOG_POST':
+        return {
+            ...state,
+            latestPost: action.data
+        }
+
+    case 'SEND_MESSAGES':
+        return {
+            ...state,
+            messages: action.data
+        }
+
     case 'SET_ACTIVE_PROJECT': {
 
         const match = getProjectById(action.data);
-        // eslint-disable-next-line
-        console.log('match', match);
         return {
             ...state,
             active: {

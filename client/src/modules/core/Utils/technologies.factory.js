@@ -1,3 +1,3 @@
-import technologies from '@/data/technologies.json';
+import technologies from '@/data/mocks/technologies.json';
 
 export const technologiesInfo = technologies;

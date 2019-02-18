@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import AppStore from '../../../data/store.js';
+
 export default {
     name: 'SebContact',
     data () {
@@ -69,12 +71,16 @@ export default {
         },
         onMessageWasSent (message) {
             // called when the user sends a message
-            this.messageList = [...this.messageList, message]
+            this.messageList = [...this.messageList, message];
+            AppStore.dispatch({
+                type: 'SEND_MESSAGES',
+                data: this.messageList
+            });
         },
         openChat () {
             // called when the user clicks on the fab button to open the chat
-            this.isChatOpen = true
-            this.newMessagesCount = 0
+            this.isChatOpen = true;
+            this.newMessagesCount = 0;
         },
         closeChat () {
             // called when the user clicks on the botton to close the chat
