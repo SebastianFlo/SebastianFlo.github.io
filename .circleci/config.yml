@@ -12,11 +12,15 @@ workflows:
             - build
 jobs:
   build:
+    docker:
+        - image: circleci/node:10-alpine
     steps:
         - checkout # check out the code in the project directory
         - run: echo "hello world" # run the `echo` command
 
     deploy-prod:
+        docker:
+            - image: circleci/node:10-alpine
         steps:
             - checkout
             - run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "./deploy_project.sh"
