@@ -20,7 +20,7 @@ jobs:
 
   deploy-prod:
       docker:
-          - image: node:10-alpine
+          - image: gcc:7
       steps:
           - checkout
           - run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "./deploy_project.sh"
