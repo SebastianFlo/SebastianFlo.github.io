@@ -26,7 +26,7 @@ node {
         echo 'Creating container for the first time'
     }
 
-    sh "docker run -d -v /var/www/ssl:/etc/ssl/cert:ro --name=seb_party0 -p 443:443 sebastianflo/sebastian.party:latest"
+    sh "docker run -d -v /var/www/ssl:/etc/ssl/certs:ro --name=seb_party0 -p 443:443 sebastianflo/sebastian.party:latest"
 
   }
 }
