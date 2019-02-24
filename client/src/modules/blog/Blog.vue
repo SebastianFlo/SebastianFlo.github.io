@@ -34,33 +34,33 @@
 </template>
 
 <script>
-    import AppStore from '../../data/store.js';
+import AppStore from '../../data/store.js';
 
-    export default {
-        name: 'blog',
-        data() {
-            return {
-                latestPost: {}
-            }
-        },
-        mounted() {
-            this.unsubscribe = AppStore.subscribe(this.onStateUpdate)
-            this.latestPost = AppStore.getState().latestPost;
-        },
-        methods: {
-            goToUrl(url) {
-                window.open(url, '_blank');
-            },
-            onStateUpdate() {
-                if (this.latestPost !== AppStore.getState().latestPost) {
-                    this.latestPost = AppStore.getState().latestPost;
-                }
-            }
-        },
-        destroyed() {
-            this.unsubscribe();
+export default {
+    name: 'blog',
+    data () {
+        return {
+            latestPost: {}
         }
+    },
+    mounted () {
+        this.unsubscribe = AppStore.subscribe(this.onStateUpdate)
+        this.latestPost = AppStore.getState().latestPost;
+    },
+    methods: {
+        goToUrl (url) {
+            window.open(url, '_blank');
+        },
+        onStateUpdate () {
+            if (this.latestPost !== AppStore.getState().latestPost) {
+                this.latestPost = AppStore.getState().latestPost;
+            }
+        }
+    },
+    destroyed () {
+        this.unsubscribe();
     }
+}
 </script>
 
 <style lang="scss">

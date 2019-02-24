@@ -16,11 +16,44 @@ jobs:
         - image: node:10-alpine
     steps:
         - checkout # check out the code in the project directory
-        - run: echo "hello world" # run the `echo` command
+        - setup_remote_docker
+        - run:
+            name: Build image
+            command: docker build --no-cache -t seftek/sebastian.party:$CIRCLE_SHA1 .
+        - run:
+          name: Test image
+          command: |
+            docker run -d -p 443:443 --name built-image seftek/sebastian.party
+            sleep 10
+            docker run --network container:built-image appropriate/curl --retry
+        - run:
+          name: Save image to an archive
+          command: |
+            mkdir docker-image
+            docker save -o docker-image/image.tar seftek/sebastian.party
+
+        - persist_to_workspace:
+            root: .
+            paths:
+                - docker-image
 
   deploy-prod:
       docker:
-          - image: gcc:7
+            - image: gcc:7
       steps:
-          - checkout
-          - run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "./deploy_project.sh"
+            - checkout
+            - setup_remote_docker
+            - attach_workspace:
+                at: workspace
+            - run:
+                name: Load image
+                command: docker load --input workspace/docker-image/image.tar
+            - run:
+                name: Push image
+                command: |
+                    docker login -u $DOCKERHUB_LOGIN -p $DOCKERHUB_PASSWORD
+                    docker push seftek/sebastian.party:$CIRCLE_SHA1
+            - run:
+                name: Deploy
+                command: echo 'Deploying'
+                # command: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "./deploy_project.sh"
