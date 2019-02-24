@@ -66,4 +66,4 @@ jobs:
                 name: Test image
                 command: |
                     sleep 10
-                    ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "sudo docker run --network container:seb_party0 appropriate/curl --retry"
+                    ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "sudo docker run --network container:seb_party0 appropriate/curl --retry 10 --retry-connrefused https://localhost:443"
