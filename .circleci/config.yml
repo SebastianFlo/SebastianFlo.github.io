@@ -13,10 +13,11 @@ workflows:
 jobs:
   build:
     machine: true
+    working_directory: /client
     steps:
         - checkout # check out the code in the project directory
         # - setup_remote_docker
-        - run: cd client
+        # - run: cd client
         - run:
             name: Build image
             command: |
