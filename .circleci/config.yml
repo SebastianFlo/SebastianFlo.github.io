@@ -12,8 +12,8 @@ workflows:
             - build
 jobs:
   build:
-    docker:
-        - image: gcc:7
+    build:
+        machine: true
     steps:
         - checkout # check out the code in the project directory
         - setup_remote_docker
@@ -38,9 +38,9 @@ jobs:
                 - docker-image
 
   deploy-prod:
-      docker:
-            - image: gcc:7
-      steps:
+        build:
+            machine: true
+        steps:
             - checkout
             - setup_remote_docker
             - attach_workspace:
