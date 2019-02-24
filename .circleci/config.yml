@@ -59,6 +59,11 @@ jobs:
                 name: Deploy
                 # command: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "./deploy_project.sh"
                 command: |
-                    ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "sudo docker stop seb_party0 && sudo docker rm seb_party0"
+                    ssh -oStrictHostKeyChecking=no $DROPLET_USER@$DROPLET_IP "sudo docker stop seb_party0 && sudo docker rm seb_party0"
+                    sleep 2
+                    ssh -oStrictHostKeyChecking=no $DROPLET_USER@$DROPLET_IP "sudo docker run -d -v /var/www/ssl:/etc/ssl/cert:ro --name=seb_party0 -p 443:443 seftek/sebastian.party:"$CIRCLE_SHA1
+            - run:
+                name: Test image
+                command: |
                     sleep 10
-                    ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "sudo docker run -d -v /var/www/ssl:/etc/ssl/cert:ro --name=seb_party0 -p 443:443 seftek/sebastian.party:"$CIRCLE_SHA1
+                    ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "sudo docker run --network container:seb_party0 appropriate/curl --retry"
