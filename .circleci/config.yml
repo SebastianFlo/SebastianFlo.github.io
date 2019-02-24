@@ -12,8 +12,7 @@ workflows:
             - build
 jobs:
   build:
-    build:
-        machine: true
+    machine: true
     steps:
         - checkout # check out the code in the project directory
         - setup_remote_docker
@@ -38,8 +37,7 @@ jobs:
                 - docker-image
 
   deploy-prod:
-        build:
-            machine: true
+        machine: true
         steps:
             - checkout
             - setup_remote_docker
