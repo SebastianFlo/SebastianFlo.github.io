@@ -66,4 +66,4 @@ jobs:
                 name: Test image
                 command: |
                     sleep 10
-                    ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "sudo docker inspect -f {{.State.Running}} seb_party0"
+                    ssh -oStrictHostKeyChecking=no $DROPLET_USER@$DROPLET_IP "sudo docker inspect -f {{.State.Running}} seb_party0"
