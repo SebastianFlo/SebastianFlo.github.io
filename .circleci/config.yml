@@ -61,7 +61,7 @@ jobs:
                 command: |
                     ssh -oStrictHostKeyChecking=no $DROPLET_USER@$DROPLET_IP "sudo docker stop seb_party0 && sudo docker rm seb_party0"
                     sleep 2
-                    ssh -oStrictHostKeyChecking=no $DROPLET_USER@$DROPLET_IP "sudo docker run -d -v /var/www/ssl:/etc/ssl/cert:ro --name=seb_party0 -p 443:443 seftek/sebastian.party:"$CIRCLE_SHA1
+                    ssh -oStrictHostKeyChecking=no $DROPLET_USER@$DROPLET_IP "sudo docker run -d -v /var/www/ssl:/etc/ssl/certs:ro --name=seb_party0 -p 443:443 seftek/sebastian.party:"$CIRCLE_SHA1
             - run:
                 name: Test image
                 command: |
