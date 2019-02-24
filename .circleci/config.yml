@@ -21,15 +21,15 @@ jobs:
             name: Build image
             command: docker build --no-cache -t seftek/sebastian.party:$CIRCLE_SHA1 .
         - run:
-          name: Test image
-          command: |
-            docker run -d -p 443:443 --name built-image seftek/sebastian.party
+            name: Test image
+            command: |
+                docker run -d -p 443:443 --name built-image seftek/sebastian.party
             sleep 10
             docker run --network container:built-image appropriate/curl --retry
         - run:
-          name: Save image to an archive
-          command: |
-            mkdir docker-image
+            name: Save image to an archive
+            command: |
+                mkdir docker-image
             docker save -o docker-image/image.tar seftek/sebastian.party
 
         - persist_to_workspace:
