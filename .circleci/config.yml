@@ -24,13 +24,13 @@ jobs:
             name: Test image
             command: |
                 docker run -d -p 443:443 --name built-image seftek/sebastian.party
-            sleep 10
-            docker run --network container:built-image appropriate/curl --retry
+                sleep 10
+                docker run --network container:built-image appropriate/curl --retry
         - run:
             name: Save image to an archive
             command: |
                 mkdir docker-image
-            docker save -o docker-image/image.tar seftek/sebastian.party
+                docker save -o docker-image/image.tar seftek/sebastian.party
 
         - persist_to_workspace:
             root: .
