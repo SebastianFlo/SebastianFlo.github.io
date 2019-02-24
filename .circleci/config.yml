@@ -12,8 +12,8 @@ workflows:
             - build
 jobs:
   build:
-    docker:
-        - image: node:10-alpine
+    machine:
+        - image: gcc:7
     steps:
         - checkout # check out the code in the project directory
         - setup_remote_docker
