@@ -24,7 +24,7 @@ jobs:
         - run:
             name: Test image
             command: |
-                docker run -d -p 443:443 --name built-image seftek/sebastian.party
+                docker run -d -p 443:443 --name built-image seftek/sebastian.party:$CIRCLE_SHA1
                 sleep 10
                 docker run --network container:built-image appropriate/curl --retry
         - run:
