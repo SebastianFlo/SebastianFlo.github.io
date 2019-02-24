@@ -15,7 +15,7 @@ jobs:
     machine: true
     steps:
         - checkout # check out the code in the project directory
-        - setup_remote_docker
+        # - setup_remote_docker
         - run:
             name: Build image
             command: docker build --no-cache -t seftek/sebastian.party:$CIRCLE_SHA1 .
@@ -40,7 +40,7 @@ jobs:
         machine: true
         steps:
             - checkout
-            - setup_remote_docker
+            # - setup_remote_docker
             - attach_workspace:
                 at: workspace
             - run:
