@@ -12,7 +12,7 @@ workflows:
             - build
 jobs:
   build:
-    machine:
+    docker:
         - image: gcc:7
     steps:
         - checkout # check out the code in the project directory
