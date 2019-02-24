@@ -15,11 +15,12 @@ jobs:
     machine: true
     steps:
         - checkout # check out the code in the project directory
-        - working_directory: /client
         # - setup_remote_docker
         - run:
             name: Build image
-            command: docker build --no-cache -t seftek/sebastian.party:$CIRCLE_SHA1 .
+            command: |
+                cd client
+                docker build --no-cache -t seftek/sebastian.party:$CIRCLE_SHA1 .
         - run:
             name: Test image
             command: |
