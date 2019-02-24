@@ -25,7 +25,7 @@ jobs:
             name: Test image
             command: |
                 cd client
-                docker run -d -p 443:443 --name built-image seftek/sebastian.party:$CIRCLE_SHA1
+                docker run -d -p 8080:8080 --name built-image seftek/sebastian.party:$CIRCLE_SHA1
                 sleep 10
                 docker run --network container:built-image seftek/sebastian.party:$CIRCLE_SHA1 --retry
         - run:
