@@ -57,7 +57,6 @@ jobs:
                     docker push seftek/sebastian.party:$CIRCLE_SHA1
             - run:
                 name: Deploy
-                command: echo 'Deploying'
                 # command: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "./deploy_project.sh"
                 command: |
                     ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "sudo docker stop seb_party0 && sudo docker rm seb_party0"
