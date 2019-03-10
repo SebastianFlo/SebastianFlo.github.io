@@ -3,7 +3,7 @@
         "row1": [
             {
                 "id": "sef_cms_website_builder",
-                "name": "SEF-CMS Website Builder",
+                "name": "GrapesJs/VueJs Website Builder",
                 "shortDescription": "Custom Visual Website using a drag and drop interface",
                 "longDescription": "Website building framework build on GrapesJs using VueJs and Vuex. Backend built using Python/Flask",
                 "private": false,

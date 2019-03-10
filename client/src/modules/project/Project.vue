@@ -15,7 +15,7 @@
                         <div v-if="project.url">
                             <a :href="project.url" target="new">Url</a>
                         </div>
-                        <div v-if="project.githubLink">
+                        <div class="sef-vertical-box--medium" v-if="project.githubLink">
                             <a :href="project.githubLink" target="new">Github Link</a>
                         </div>
                         <p class="subtitle">{{ project.shortDescription }}</p>
@@ -47,7 +47,7 @@
                 <article class="tile is-child notification is-warning">
                     <p class="subtitle">Technology</p>
                     <div class="content">
-                        <div v-for="tech in technologyData" v-bind:key="tech.name" class="technology-icon">
+                        <div v-for="tech in technologyData" v-bind:key="tech.name" class="technology-icon project--technology-icon">
                             <img width="50" :src="require(`@/assets/${tech.icon}`)" :alt="tech.name">
                             {{ tech.name }}
                         </div>

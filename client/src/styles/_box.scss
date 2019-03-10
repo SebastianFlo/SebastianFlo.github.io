@@ -1,0 +1,34 @@
+@import "./variables";
+
+.sef-box--smallest {
+    padding: $smallest;
+}
+
+.sef-box--small {
+    padding: $small;
+}
+
+.sef-box--medium {
+    padding: $medium;
+}
+
+.sef-box--large {
+    padding: $large;
+}
+
+.sef-vertical-box--smallest {
+    padding: $smallest 0;
+}
+
+.sef-vertical-box--small {
+    padding: $small 0;
+}
+
+.sef-vertical-box--medium {
+    padding: $medium 0;
+}
+
+.sef-vertical-box--large {
+    padding: $large 0;
+}
+

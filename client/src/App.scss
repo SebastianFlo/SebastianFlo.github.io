@@ -1,6 +1,9 @@
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
+// import own variables
+@import "./styles/box";
+
 // Set your colors
 $sebPrimary: #ffdd57;
 $primary: $white-ter;
@@ -98,4 +101,21 @@ $radius: 15px;
 
 .sef-rounded-top {
     border-radius: 15px 15px 0 0;
+}
+
+$side-color: $yellow;
+
+.technology-icon {
+    padding: 15px;
+    width: 33%;
+    height: 33%;
+    position: relative;
+    float: left;
+    background: none;
+    border: 1px solid darken( $side-color, 20%);
+
+
+    img {
+        // filter: grayscale(100%);
+    }
 }
