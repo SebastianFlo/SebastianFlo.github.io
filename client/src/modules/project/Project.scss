@@ -1,4 +1,8 @@
+@import "~bulma/sass/utilities/initial-variables";
+
 .project--technology-icon {
     width: 25%;
     height: 25%;
+
+    font-size: $size-7;
 }

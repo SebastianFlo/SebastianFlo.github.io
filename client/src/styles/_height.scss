@@ -1,0 +1,13 @@
+@import "./variables";
+
+.sef-height--medium {
+    min-height: $medium;
+}
+
+.sef-height--tall {
+    min-height: $tall;
+}
+
+.sef-height--tallest {
+    min-height: $tallest;
+}

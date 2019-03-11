@@ -6,10 +6,10 @@
         </div>
 
         <b-modal :active.sync="modalOpen">
-            <div class="image is-4by3">
+            <p class="image is-4by3">
                 <img :src="imageUrl">
                 {{ imageUrl }}
-            </div>
+            </p>
         </b-modal>
     </figure>
 </template>

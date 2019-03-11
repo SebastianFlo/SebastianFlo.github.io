@@ -37,7 +37,7 @@
             <div class="tile is-parent">
                 <article class="tile is-child notification is-warning">
                     <p class="subtitle">Technology</p>
-                    <div class="content">
+                    <div class="content sef-height--medium">
                         <div v-for="tech in technologyData" v-bind:key="tech.name" class="technology-icon project--technology-icon">
                             <img width="50" :src="require(`@/assets/${tech.icon}`)" :alt="tech.name">
                             {{ tech.name }}
