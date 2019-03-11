@@ -24,7 +24,7 @@
 
                 <div class="tile is-parent">
                     <article class="tile is-child">
-                            <Preview v-bind:image="project.preview"/>
+                        <Preview v-bind:image="project.preview" class="hover image is-4by3"/>
                     </article>
                 </div>
             </div>

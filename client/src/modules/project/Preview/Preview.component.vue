@@ -1,15 +1,15 @@
 <template>
-    <figure @click="modalOpen = true" class="hover image is-4by3">
-        <div class="preview">
+    <figure>
+        <div @click="modalOpen = true" class="preview">
             <img class="preview-computer" src="@/assets/computer.svg">
             <img class="preview-image" :src="imageUrl">
         </div>
 
         <b-modal :active.sync="modalOpen">
-            <p class="image">
+            <div class="image is-4by3">
                 <img :src="imageUrl">
                 {{ imageUrl }}
-            </p>
+            </div>
         </b-modal>
     </figure>
 </template>
@@ -21,7 +21,7 @@ export default {
     data() {
         return {
             modalOpen: false,
-            imageUrl: ''
+            imageUrl: 'https://raw.githubusercontent.com/SebastianFlo/vue-organizations-visualisations/master/src/assets/screenshot.jpg'
         }
     },
     watch: {
